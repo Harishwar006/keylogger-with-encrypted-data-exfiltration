@@ -76,9 +76,9 @@ Virtual environment support
 
 🔹 Step 1: Clone the Repository
 
-    git clone https://github.com/your-username/keylogger-with-data-exfiltration.git
+    https://github.com/Harishwar006/keylogger-with-encrypted-data-exfiltration/tree/main
 
-    cd keylogger-with-data-exfiltration
+    cd keylogger-with-encrypted-data-exfiltration
 
 🔹 Step 2: Create and Activate Virtual Environment
 
