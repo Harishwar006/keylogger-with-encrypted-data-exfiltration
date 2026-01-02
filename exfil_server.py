@@ -2,9 +2,13 @@ from flask import Flask, request
 from datetime import datetime
 import os
 
+# 🔽 ADD THIS HERE
+LOG_DIR = "logs"
+os.makedirs(LOG_DIR, exist_ok=True)
+
 app = Flask(__name__)
 
-RECEIVED_LOG = "logs/received_exfil_data.bin"
+RECEIVED_LOG = os.path.join(LOG_DIR, "received_exfil_data.bin")
 
 @app.route("/exfil", methods=["POST"])
 def receive_data():
