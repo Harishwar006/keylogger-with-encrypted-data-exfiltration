@@ -116,19 +116,7 @@ Open a new terminal, activate the virtual environment again, then run:
 
 > The keylogger runs only locally and requires manual execution.
 
-🔹 Step 6: View Logs
-
-Server Logs
-
-    cat logs/server.log
-
-Keystroke Logs
-
-    cat logs/keystrokes.log
-
-(On Windows, open the files directly or use type)
-
-🔹 Step 7: Stop the Project
+🔹 Step 6: Stop the Project
 
 Press: (Exfiltration side)
 
@@ -138,14 +126,10 @@ create the kill switch file (New Terminal) for Keylogger:
 
     touch kill_switch.txt
 
-🔹 Step 8: Deactivate Virtual Environment
+🔹 Step 7: Deactivate Virtual Environment
 
     deactivate
-
-To view the encryted text:
-
-     cat secret.key
-
+    
 ---
 
 ✅ Expected Behavior
