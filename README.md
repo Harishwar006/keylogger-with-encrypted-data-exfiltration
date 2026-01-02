@@ -112,6 +112,8 @@ Leave this terminal running.
 
 Open a new terminal, activate the virtual environment again, then run:
 
+     rm kill_switch.txt
+
     python keylogger.py
 
 > The keylogger runs only locally and requires manual execution.
