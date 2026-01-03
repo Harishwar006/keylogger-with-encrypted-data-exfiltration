@@ -116,6 +116,8 @@ create the kill switch file (New Terminal) for Keylogger:
 
     touch kill_switch.txt
 
+return to key logger terminal and type it will exit.
+ 
  Step 7: Deactivate Virtual Environment
 
     deactivate
