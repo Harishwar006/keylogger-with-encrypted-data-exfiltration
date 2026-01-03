@@ -32,9 +32,7 @@ keylogger-lab/
 
 ├── logs/
 
-│   ├── keystrokes.log       # Sample captured keystrokes
-
-│   └── server.log           # Server request logs
+│   ├── encrypted_logs.bin
 
 ├── kill_switch.txt          # Safety stop mechanism
 
