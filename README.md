@@ -52,16 +52,6 @@ keylogger-lab/
 
 3. A simulated outbound transfer is attempted
 
-4. The exfiltration server:
-
-Validates incoming requests
-
-Rejects malformed payloads
-
-Logs all attempts
-
-5. Logs are analyzed for attack evidence
-
 ---
 
 ▶️ How to Execute the Project
@@ -74,13 +64,13 @@ Linux or Windows
 
 Virtual environment support
 
-🔹 Step 1: Clone the Repository
+ Step 1: Clone the Repository
 
     https://github.com/Harishwar006/keylogger-with-encrypted-data-exfiltration/tree/main
 
     cd keylogger-with-encrypted-data-exfiltration
 
-🔹 Step 2: Create and Activate Virtual Environment
+ Step 2: Create and Activate Virtual Environment
 
 Linux / Kali / Ubuntu
 
@@ -94,11 +84,11 @@ Windows (PowerShell)
 
     venv\Scripts\activate
     
-🔹 Step 3: Install Dependencies
+ Step 3: Install Dependencies
 
     pip install -r requirements.txt
 
-🔹 Step 4: Start the Exfiltration Detection Server
+ Step 4: Start the Exfiltration Detection Server
 
     python exfil_server.py
 
@@ -108,7 +98,7 @@ Server will start on:
 
 Leave this terminal running.
 
-🔹 Step 5: Run the Ethical Keylogger (New Terminal)
+ Step 5: Run the Ethical Keylogger (New Terminal)
 
 Open a new terminal, activate the virtual environment again, then run:
 
@@ -118,7 +108,7 @@ Open a new terminal, activate the virtual environment again, then run:
 
 > The keylogger runs only locally and requires manual execution.
 
-🔹 Step 6: Stop the Project
+ Step 6: Stop the Project
 
 Press: (Exfiltration side)
 
@@ -128,10 +118,14 @@ create the kill switch file (New Terminal) for Keylogger:
 
     touch kill_switch.txt
 
-🔹 Step 7: Deactivate Virtual Environment
+ Step 7: Deactivate Virtual Environment
 
     deactivate
-    
+
+ Step 8: To view encrypted text
+
+   open project file --> logs --> encrypted_log.bin
+   
 ---
 
 ✅ Expected Behavior
@@ -139,8 +133,6 @@ create the kill switch file (New Terminal) for Keylogger:
 Server returns 400 / 404 for invalid requests
 
 No real data is accepted
-
-Logs show rejected attempts
 
 System remains secure
 
